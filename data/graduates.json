@@ -1,0 +1,9 @@
+[
+  { "major_en": "Business & Law", "major_ar": "الأعمال والقانون", "graduates": 78400 },
+  { "major_en": "Education", "major_ar": "التربية والتعليم", "graduates": 52300 },
+  { "major_en": "Engineering", "major_ar": "الهندسة", "graduates": 41200 },
+  { "major_en": "Health & Medicine", "major_ar": "الصحة والطب", "graduates": 33800 },
+  { "major_en": "Computer Science & IT", "major_ar": "علوم الحاسب وتقنية المعلومات", "graduates": 29500 },
+  { "major_en": "Humanities & Arts", "major_ar": "العلوم الإنسانية والآداب", "graduates": 27100 },
+  { "major_en": "Natural Sciences", "major_ar": "العلوم الطبيعية", "graduates": 18600 }
+]
