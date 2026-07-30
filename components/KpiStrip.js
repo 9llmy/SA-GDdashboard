@@ -1,31 +1,32 @@
 "use client";
 import { useLang } from "@/lib/i18n";
-import graduates from "@/data/graduates.json";
-import regions from "@/data/regions.json";
+import summary from "@/data/summary.json";
 
 export default function KpiStrip() {
-  const { lang, t } = useLang();
-  const totalGraduates = graduates.reduce((s, d) => s + d.graduates, 0);
-  const avgUnemployment =
-    regions.reduce((s, r) => s + r.unemployment, 0) / regions.length;
+  const { t, n } = useLang();
 
-  const fmt = (n) => n.toLocaleString(lang === "ar" ? "ar-SA" : "en-US");
+  const femaleShare =
+    summary.gender.female && summary.gender.graduates_covered
+      ? ((summary.gender.female / summary.gender.graduates_covered) * 100).toFixed(1) + "%"
+      : "—";
 
   const items = [
-    { label: t.kpis.graduates, value: fmt(totalGraduates) },
-    { label: t.kpis.unemployment, value: `${avgUnemployment.toFixed(1)}%` },
-    { label: t.kpis.participation, value: "61.8%" },
-    { label: t.kpis.regions, value: fmt(regions.length) },
+    { value: n(summary.total_graduates), label: t.kpi.graduates },
+    { value: n(summary.universities), label: t.kpi.universities },
+    { value: t.of13(n(summary.regions_covered)), label: t.kpi.regions },
+    { value: femaleShare, label: t.kpi.female },
   ];
 
   return (
-    <div className="container kpi-strip">
-      {items.map((item) => (
-        <div className="kpi" key={item.label}>
-          <div className="value">{item.value}</div>
-          <div className="label">{item.label}</div>
-        </div>
-      ))}
+    <div className="wrap">
+      <div className="kpis">
+        {items.map((item) => (
+          <div className="kpi" key={item.label}>
+            <div className="value">{item.value}</div>
+            <div className="label">{item.label}</div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

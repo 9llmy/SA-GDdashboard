@@ -1,9 +1,10 @@
 "use client";
 import Header from "@/components/Header";
+import CoverageGrid from "@/components/CoverageGrid";
 import KpiStrip from "@/components/KpiStrip";
-import GraduatesChart from "@/components/GraduatesChart";
-import UnemploymentChart from "@/components/UnemploymentChart";
-import RegionTable from "@/components/RegionTable";
+import UniversitiesChart from "@/components/UniversitiesChart";
+import DegreesChart from "@/components/DegreesChart";
+import GenderSplit from "@/components/GenderSplit";
 import { useLang } from "@/lib/i18n";
 
 export default function Home() {
@@ -11,12 +12,18 @@ export default function Home() {
   return (
     <main>
       <Header />
+      <CoverageGrid />
       <KpiStrip />
-      <GraduatesChart />
-      <UnemploymentChart />
-      <RegionTable />
-      <footer className="footer">
-        <div className="container">{t.footer}</div>
+      <UniversitiesChart />
+      <DegreesChart />
+      <GenderSplit />
+      <footer className="foot">
+        <div className="wrap">
+          {t.footerNote}{" "}
+          <a href="https://open.data.gov.sa" target="_blank" rel="noreferrer">
+            open.data.gov.sa
+          </a>
+        </div>
       </footer>
     </main>
   );
