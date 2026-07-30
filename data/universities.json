@@ -1,0 +1,82 @@
+[
+  {
+    "university_ar": "جامعة الملك سعود",
+    "university_en": "King Saud University",
+    "region_key": "riyadh",
+    "region_ar": "الرياض",
+    "region_en": "Riyadh",
+    "year": 2025,
+    "graduates": 14649,
+    "female": 7568,
+    "male": 7081,
+    "has_gender": true,
+    "has_nationality": false
+  },
+  {
+    "university_ar": "جامعة الإمام محمد بن سعود الإسلامية",
+    "university_en": "Imam Muhammad ibn Saud Islamic University",
+    "region_key": "riyadh",
+    "region_ar": "الرياض",
+    "region_en": "Riyadh",
+    "year": 2026,
+    "graduates": 10927,
+    "female": 6031,
+    "male": 4896,
+    "has_gender": true,
+    "has_nationality": false
+  },
+  {
+    "university_ar": "جامعة حائل",
+    "university_en": "University of Hail",
+    "region_key": "hail",
+    "region_ar": "حائل",
+    "region_en": "Hail",
+    "year": 2024,
+    "graduates": 6976,
+    "female": 4074,
+    "male": 2902,
+    "has_gender": true,
+    "has_nationality": false
+  },
+  {
+    "university_ar": "جامعة الأمير سطام بن عبدالعزيز",
+    "university_en": "Prince Sattam bin Abdulaziz University",
+    "region_key": "riyadh",
+    "region_ar": "الرياض",
+    "region_en": "Riyadh",
+    "year": 2024,
+    "graduates": 5888,
+    "female": null,
+    "male": null,
+    "saudi": 5834,
+    "non_saudi": 54,
+    "has_gender": false,
+    "has_nationality": true
+  },
+  {
+    "university_ar": "جامعة حفر الباطن",
+    "university_en": "University of Hafr Al-Batin",
+    "region_key": "eastern",
+    "region_ar": "المنطقة الشرقية",
+    "region_en": "Eastern Province",
+    "year": 2025,
+    "graduates": 4003,
+    "female": 2438,
+    "male": 1565,
+    "has_gender": true,
+    "has_nationality": false
+  },
+  {
+    "university_ar": "جامعة جدة",
+    "university_en": "University of Jeddah",
+    "region_key": "makkah",
+    "region_ar": "مكة المكرمة",
+    "region_en": "Makkah",
+    "year": 2026,
+    "graduates": 3916,
+    "female": 2239,
+    "male": 1677,
+    "has_gender": true,
+    "has_nationality": false
+  }
+]

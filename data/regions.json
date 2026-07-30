@@ -1,15 +1,15 @@
 [
-  { "region_en": "Riyadh", "region_ar": "الرياض", "graduates": 61200, "unemployment": 6.1 },
-  { "region_en": "Makkah", "region_ar": "مكة المكرمة", "graduates": 48900, "unemployment": 7.4 },
-  { "region_en": "Eastern Province", "region_ar": "المنطقة الشرقية", "graduates": 35600, "unemployment": 6.8 },
-  { "region_en": "Al-Qassim", "region_ar": "القصيم", "graduates": 14800, "unemployment": 8.2 },
-  { "region_en": "Madinah", "region_ar": "المدينة المنورة", "graduates": 16700, "unemployment": 8.0 },
-  { "region_en": "Asir", "region_ar": "عسير", "graduates": 15900, "unemployment": 9.1 },
-  { "region_en": "Tabuk", "region_ar": "تبوك", "graduates": 8400, "unemployment": 9.6 },
-  { "region_en": "Hail", "region_ar": "حائل", "graduates": 6900, "unemployment": 9.3 },
-  { "region_en": "Jazan", "region_ar": "جازان", "graduates": 9800, "unemployment": 10.2 },
-  { "region_en": "Najran", "region_ar": "نجران", "graduates": 4700, "unemployment": 9.8 },
-  { "region_en": "Al-Baha", "region_ar": "الباحة", "graduates": 3900, "unemployment": 9.0 },
-  { "region_en": "Northern Borders", "region_ar": "الحدود الشمالية", "graduates": 3200, "unemployment": 9.4 },
-  { "region_en": "Al-Jouf", "region_ar": "الجوف", "graduates": 4100, "unemployment": 9.2 }
+  { "region_key": "riyadh", "region_ar": "الرياض", "region_en": "Riyadh", "graduates": 31464, "universities": 3, "has_data": true },
+  { "region_key": "hail", "region_ar": "حائل", "region_en": "Hail", "graduates": 6976, "universities": 1, "has_data": true },
+  { "region_key": "eastern", "region_ar": "المنطقة الشرقية", "region_en": "Eastern Province", "graduates": 4003, "universities": 1, "has_data": true },
+  { "region_key": "makkah", "region_ar": "مكة المكرمة", "region_en": "Makkah", "graduates": 3916, "universities": 1, "has_data": true },
+  { "region_key": "madinah", "region_ar": "المدينة المنورة", "region_en": "Madinah", "graduates": 0, "universities": 0, "has_data": false },
+  { "region_key": "qassim", "region_ar": "القصيم", "region_en": "Al-Qassim", "graduates": 0, "universities": 0, "has_data": false },
+  { "region_key": "asir", "region_ar": "عسير", "region_en": "Asir", "graduates": 0, "universities": 0, "has_data": false },
+  { "region_key": "tabuk", "region_ar": "تبوك", "region_en": "Tabuk", "graduates": 0, "universities": 0, "has_data": false },
+  { "region_key": "northern", "region_ar": "الحدود الشمالية", "region_en": "Northern Borders", "graduates": 0, "universities": 0, "has_data": false },
+  { "region_key": "jazan", "region_ar": "جازان", "region_en": "Jazan", "graduates": 0, "universities": 0, "has_data": false },
+  { "region_key": "najran", "region_ar": "نجران", "region_en": "Najran", "graduates": 0, "universities": 0, "has_data": false },
+  { "region_key": "baha", "region_ar": "الباحة", "region_en": "Al-Baha", "graduates": 0, "universities": 0, "has_data": false },
+  { "region_key": "jouf", "region_ar": "الجوف", "region_en": "Al-Jouf", "graduates": 0, "universities": 0, "has_data": false }
 ]
