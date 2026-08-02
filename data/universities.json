@@ -107,5 +107,23 @@
   "non_saudi": 119,
   "has_gender": true,
   "has_nationality": true
+},
+{
+  "university_ar": "جامعة الملك عبدالعزيز",
+  "university_en": "King Abdulaziz University",
+  "region_key": "makkah",
+  "region_ar": "مكة المكرمة",
+  "region_en": "Makkah",
+  "year": 2025,
+  "graduates": 3105,
+  "female": 1558,
+  "male": 1547,
+  "saudi": 2944,
+  "non_saudi": 161,
+  "has_gender": true,
+  "has_nationality": true,
+  "scope": "postgraduate_only",
+  "scope_note_ar": "دراسات عليا فقط — لم تُنشر بيانات البكالوريوس",
+  "scope_note_en": "Postgraduate only — no bachelor's data published"
 }
 ]

@@ -7,11 +7,15 @@ export default function UniversitiesChart() {
   const { lang, t } = useLang();
 
   const items = [...universities]
-    .sort((a, b) => b.graduates - a.graduates)
-    .map((u) => ({
-      label: lang === "ar" ? u.university_ar : u.university_en,
-      value: u.graduates,
-    }));
+  .sort((a, b) => b.graduates - a.graduates)
+  .map((u) => ({
+    label:
+      (lang === "ar" ? u.university_ar : u.university_en) +
+      (u.scope === "postgraduate_only"
+        ? lang === "ar" ? " (دراسات عليا)" : " (postgrad only)"
+        : ""),
+    value: u.graduates,
+  }));
 
   return (
     <section className="section wrap">
