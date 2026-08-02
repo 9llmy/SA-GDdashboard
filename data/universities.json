@@ -78,5 +78,18 @@
     "male": 1677,
     "has_gender": true,
     "has_nationality": false
-  }
+  },
+  {
+  "university_ar": "جامعة القصيم",
+  "university_en": "Qassim University",
+  "region_key": "qassim",
+  "region_ar": "القصيم",
+  "region_en": "Al-Qassim",
+  "year": 2026,
+  "graduates": 3784,
+  "female": null,
+  "male": null,
+  "has_gender": false,
+  "has_nationality": false
+}
 ]
