@@ -1,6 +1,6 @@
 {
-  "total_graduates": 50143,
-  "universities": 7,
+  "total_graduates": 57404,
+  "universities": 8,
   "regions_covered": 5,
   "regions_total": 13,
   "years": [2024, 2025, 2026],
@@ -9,16 +9,16 @@
   "year_note_ar": "الأرقام مجمّعة من سنوات نشر مختلفة (2024–2026) ولا تمثل سنة واحدة.",
   "year_note_en": "Figures combine different publication years (2024–2026) and are not a single-year snapshot.",
   "gender": {
-    "available_for": 5,
-    "graduates_covered": 40471,
-    "female": 22350,
-    "male": 18121
-  },
-  "nationality": {
-    "available_for": 1,
-    "graduates_covered": 5888,
-    "saudi": 5834,
-    "non_saudi": 54
+  "available_for": 6,
+  "graduates_covered": 47732,
+  "female": 27235,
+  "male": 20497
+},
+"nationality": {
+  "available_for": 2,
+  "graduates_covered": 13149,
+  "saudi": 12976,
+  "non_saudi": 173
   },
   "source": "open.data.gov.sa"
 }
