@@ -91,5 +91,21 @@
   "male": null,
   "has_gender": false,
   "has_nationality": false
+},
+{
+  "university_ar": "جامعة الملك فيصل",
+  "university_en": "King Faisal University",
+  "region_key": "eastern",
+  "region_ar": "المنطقة الشرقية",
+  "region_en": "Eastern Province",
+  "year": 2024,
+  "hijri_year": 1445,
+  "graduates": 7261,
+  "female": 4885,
+  "male": 2376,
+  "saudi": 7142,
+  "non_saudi": 119,
+  "has_gender": true,
+  "has_nationality": true
 }
 ]
