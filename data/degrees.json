@@ -6,6 +6,6 @@
   { "degree_ar": "دكتوراه", "graduates": 1193, "female": 673, "male": 520 }, 
   { "degree_ar": "زمالة", "graduates": 172, "female": 72, "male": 100 },
   { "degree_ar": "دبلوم عالي", "graduates": 67, "female": 34, "male": 33 },
-  { "degree_ar": "دبلوم طبي", "graduates": 18, "female": 8, "male": 10 }
-  { "degree_ar": "دبلوم مشارك", "graduates": 506, "female": 297, "male": 209 },
+  { "degree_ar": "دبلوم طبي", "graduates": 18, "female": 8, "male": 10 },
+  { "degree_ar": "دبلوم مشارك", "graduates": 506, "female": 297, "male": 209 }
 ]

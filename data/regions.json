@@ -11,5 +11,5 @@
   { "region_key": "najran", "region_ar": "نجران", "region_en": "Najran", "graduates": 0, "universities": 0, "has_data": false },
   { "region_key": "baha", "region_ar": "الباحة", "region_en": "Al-Baha", "graduates": 0, "universities": 0, "has_data": false },
   { "region_key": "makkah", "region_ar": "مكة المكرمة", "region_en": "Makkah", "graduates": 7021, "universities": 2, "has_data": true },
-  { "region_key": "jouf", "region_ar": "الجوف", "region_en": "Al-Jouf", "graduates": 3247, "universities": 1, "has_data": true },
+  { "region_key": "jouf", "region_ar": "الجوف", "region_en": "Al-Jouf", "graduates": 3247, "universities": 1, "has_data": true }
 ]
