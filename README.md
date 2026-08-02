@@ -1,23 +1,20 @@
 <div align="center">
 
-# 📊 Saudi Jobs & Education Dashboard
+# 🎓 Saudi University Graduates
 
-### Bilingual Open-Data Dashboard on Graduates & the Saudi Labor Market
-
-<!-- Uncomment after deploying to Vercel:
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-brightgreen?style=for-the-badge)](https://sa-jobs-education-dashboard.vercel.app)
--->
+### What Saudi universities actually publish about their graduates — gaps included
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js&logoColor=white)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://react.dev/)
-[![Recharts](https://img.shields.io/badge/Recharts-2-22B5BF?logo=chartdotjs&logoColor=white)](https://recharts.org/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES2022-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
-[![Open Data](https://img.shields.io/badge/Data-open.data.gov.sa-006C35)](https://open.data.gov.sa)
+[![Open Data](https://img.shields.io/badge/Data-open.data.gov.sa-046A38)](https://open.data.gov.sa)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**Which majors actually lead to jobs? A bilingual (Arabic / English) dashboard exploring graduate output and unemployment across all 13 Saudi regions.**
+<sub>Data last updated: July 2026 · 6 universities loaded · work in progress</sub>
 
-**لوحة تفاعلية ثنائية اللغة لاستكشاف بيانات الخريجين وسوق العمل عبر مناطق المملكة**
+**A bilingual (Arabic/English) dashboard built from real graduate data published by Saudi universities — and honest about the regions that haven't published yet.**
+
+**لوحة ثنائية اللغة مبنية على بيانات خريجين حقيقية من الجامعات السعودية — وصريحة بشأن المناطق التي لم تنشر بياناتها بعد**
 
 </div>
 
@@ -25,39 +22,94 @@
 
 ## 🌟 Overview
 
-Saudi Jobs & Education Dashboard turns raw open-government data into a readable picture of the gap between what universities produce and what the labor market absorbs. It pairs **graduate counts by field of study** with **unemployment rates by region**, so the mismatch between education output and employment demand becomes visible at a glance.
+Most dashboards show you the data that exists. This one also shows you the data that doesn't.
 
-The entire interface flips between **Arabic (RTL)** and **English (LTR)** with a single click — layout direction, chart axis orientation, and even numeral formatting (`61,200` ↔ `٦١٬٢٠٠`) all switch together.
+Saudi universities publish graduate figures on the [Saudi Open Data Platform](https://open.data.gov.sa), and every one of them publishes in a different shape — some one row per graduate, some pre-aggregated, some split across five files by degree level, some releasing the same graduates three times over. Turning them into one comparable dataset is the actual work of this project.
 
-Built as a **static site**: no server, no database. Data lives in versioned JSON files, which keeps the project auditable, free to host, and instantly reproducible.
+**This is an early stage.** Six universities are loaded so far, covering 4 of the Kingdom's 13 administrative regions. Rather than quietly presenting four regions as if they were the whole picture, the dashboard's opening element is a grid of all thirteen — four lit, nine dark.
 
 ---
 
 ## ✨ Features
 
-- 🌍 **True Bilingual Support** — One toggle flips the full layout between Arabic RTL and English LTR
-- 🔄 **RTL-Aware Charts** — Axis orientation and category order mirror correctly, which Recharts does not do out of the box
-- 🔢 **Localized Numerals** — Arabic-Indic digits and separators via `Intl` locale formatting
-- 📊 **Graduates by Field** — Horizontal bar chart across 7 major fields of study
-- 🗺️ **Unemployment by Region** — All 13 administrative regions, sorted highest to lowest
-- 📋 **Regional Overview Table** — Graduates and unemployment side by side, hover-highlighted
-- 🎨 **Logical CSS Properties** — `padding-inline-start` over `padding-left`, so styling mirrors itself with zero duplicated rules
-- ⚡ **Zero-Runtime Data Layer** — JSON imported at build time; no API calls, no loading states
-- ♿ **Accessible Baseline** — Visible keyboard focus, responsive down to mobile, `prefers-reduced-motion` respected
-- 🚀 **Deploy-Ready** — Static output, hostable free on Vercel or GitHub Pages
+- 🌍 **True bilingual support** — one toggle flips layout, text, and numerals (`46,359` ↔ `٤٦٬٣٥٩`)
+- 🗺️ **Coverage-first design** — all 13 regions shown; absent data is visually distinct from a zero
+- ⚠️ **Self-updating caveats** — "degree published for 67% of graduates" is computed, not hardcoded
+- 📊 **Zero chart libraries** — CSS bars that mirror natively in RTL; ~4KB page weight
+- 🔢 **Honest aggregation** — female share divides by covered graduates, not the total
+- 🧩 **Sections hide themselves** when their dimension is missing entirely
+- ⚡ **Static** — JSON imported at build time; no server, no loading states
+- ♿ Keyboard focus, mobile-responsive, `prefers-reduced-motion` respected
 
 ---
 
-## 📊 Project Stats
+## 📊 What's in the data
 
 | Metric | Value |
 | --- | --- |
-| 🗺️ Regions Covered | **13** (all administrative regions) |
-| 🎓 Fields of Study | **7** |
-| 🌍 Languages | **2** (AR / EN) |
-| 📈 Visualizations | **2 charts + 1 table + 4 KPIs** |
-| 📦 Runtime Dependencies | **4** (Next, React, React-DOM, Recharts) |
-| 🗄️ Backend Services | **0** — fully static |
+| 🎓 Graduates | **46,359** |
+| 🏛️ Universities loaded | **6** |
+| 🗺️ Regions covered | **4 of 13** |
+| 📅 Publication years | **2024–2026** (mixed) |
+| 🚻 Gender available for | 5 of 6 universities |
+| 🎖️ Degree level available for | 3 of 6 universities |
+| 🌐 Nationality available for | 1 of 6 universities |
+
+### Universities currently included
+
+| University | Region | Graduates | Year |
+| --- | --- | ---: | --- |
+| King Saud University | Riyadh | 14,649 | 2025 |
+| Imam Muhammad ibn Saud Islamic | Riyadh | 10,927 | 2026 |
+| University of Hail | Hail | 6,976 | 2024 |
+| Prince Sattam bin Abdulaziz | Riyadh | 5,888 | 2024 |
+| University of Hafr Al-Batin | Eastern | 4,003 | 2025 |
+| University of Jeddah | Makkah | 3,916 | 2026 |
+
+> ⚠️ **Read the numbers carefully.** Figures combine publication years 2024–2026 and are not a single-year snapshot. Riyadh accounts for 68% of the total simply because three of the six universities loaded so far are there. This reflects the current stage of data collection, not the actual distribution of Saudi graduates.
+
+---
+
+## 📈 Coverage status
+
+| | |
+| --- | --- |
+| **Currently loaded** | 6 universities · 4 of 13 regions |
+| **Goal** | Every university publishing graduate data on open.data.gov.sa |
+| **Blocker** | None — the parser handles four published formats; adding a university is a registry entry, not new code |
+
+Universities are being added **region-first rather than by size**: a file from an uncovered region does more for the picture than another Riyadh institution. Priority is Asir, Qassim, Madinah, and the northern and southern regions, which have no representation yet.
+
+The dashboard is designed to stay honest as this grows. Coverage figures, caveats, and the region grid are all computed from the data — as universities are added, the "4 of 13" and the partial-dimension warnings update themselves, and disappear entirely once coverage is complete.
+
+---
+
+## 🧹 Data cleaning notes
+
+Every publisher needed different handling. Documented here because the cleaning *is* the project:
+
+| Issue | Found in | Handling |
+| --- | --- | --- |
+| Hidden `العدد الإجمالي` total rows | 6 files | Detected and excluded — silently doubled totals otherwise |
+| Same graduates published 3× (by major / gender / nationality) | Jeddah, Hafr Al-Batin | One view counted; the rest are duplicates |
+| 346 trailing empty rows | PhD export | Dropped |
+| Published total off by 3 | Prince Sattam | Row sum used; discrepancy logged |
+| Degree written three ways (`بكالوريوس` / `البكالوريوس`) | Across universities | Canonical mapping |
+| Alef variants splitting one label in two (`إدارة` / `ادارة`) | Hail | Normalized |
+| Hijri years (1445, 1447) | 2 universities | Converted, original retained |
+| Degree level listed as a "college" row | Prince Sattam | Excluded, amount reported |
+| Dual-enrolled high-school students | Jeddah | Excluded — not university graduates |
+
+**Nothing is estimated or imputed.** A university that didn't publish gender contributes `null`, not a guess.
+
+### Published formats handled
+
+| Shape | Description | Example |
+| --- | --- | --- |
+| `rows` | One row per graduate | Hail, King Saud |
+| `agg` | Wide counts with merged headers | Prince Sattam |
+| `long` | Tidy counts, one row per group | Imam Muhammad ibn Saud |
+| `terms` | Split by term, with duplicate views | Jeddah, Hafr Al-Batin |
 
 ---
 
@@ -65,108 +117,75 @@ Built as a **static site**: no server, no database. Data lives in versioned JSON
 
 ```
 data/*.json  ──▶  LangProvider (React Context)
-                        │  broadcasts { lang, t }
-        ┌───────────────┼───────────────┐
-        ▼               ▼               ▼
-    Header         KpiStrip      Charts + Table
-  (lang toggle)   (4 metrics)      (Recharts)
+                        │  broadcasts { lang, t, n, degree }
+        ┌───────────────┼───────────────┬──────────────┐
+        ▼               ▼               ▼              ▼
+    Header        CoverageGrid      KpiStrip        Charts
+  (lang toggle)   (13 regions)     (4 metrics)     (BarList)
 ```
 
-Language state lives in a single React Context. Every component subscribes with one `useLang()` call, so flipping the toggle re-renders the whole tree in the other language — no prop drilling, no page reload, no duplicated component trees.
+Language lives in one React Context. Every component subscribes with `useLang()`, so one toggle re-renders the tree in the other language — no prop drilling, no reload.
 
 ---
 
-## 🗂️ Project Structure
+## 🗂️ Project structure
 
 ```
 ├── app/
-│   ├── layout.js          # Root layout, IBM Plex Sans Arabic, provider mount
-│   ├── page.js            # Page composition
+│   ├── layout.js          # Root layout, IBM Plex Sans Arabic
+│   ├── page.js            # Composition
 │   └── globals.css        # Design tokens + logical properties
 ├── components/
-│   ├── Header.js          # Title, tagline, language toggle
-│   ├── KpiStrip.js        # Four headline metrics
-│   ├── GraduatesChart.js  # Graduates by field of study
-│   ├── UnemploymentChart.js
-│   └── RegionTable.js
+│   ├── Header.js          # Title, language toggle, mixed-year notice
+│   ├── CoverageGrid.js    # All 13 regions, lit and unlit
+│   ├── KpiStrip.js        # Headline metrics
+│   ├── BarList.js         # Shared CSS bar component
+│   ├── UniversitiesChart.js
+│   ├── DegreesChart.js
+│   └── GenderSplit.js
 ├── lib/
-│   └── i18n.js            # AR/EN dictionaries + language context
-└── data/
-    ├── graduates.json     # Graduates by field
-    └── regions.json       # Per-region graduates & unemployment
+│   └── i18n.js            # Dictionaries + language context
+└── data/                  # Generated JSON
+    ├── summary.json
+    ├── universities.json
+    ├── regions.json
+    ├── degrees.json
+    └── colleges.json
 ```
 
 ---
 
-## 📂 Data Sources
+## 🚀 Getting started
 
-All data originates from the [Saudi Open Data Platform](https://open.data.gov.sa).
-
-| Dataset | Publisher | Used For |
-| --- | --- | --- |
-| University graduates by major | Ministry of Education | Graduates chart |
-| Unemployment rate by region | GASTAT | Regional chart & table |
-| Labor force survey | GASTAT | Participation KPI |
-
-> ⚠️ **Note:** The JSON files currently shipped are structurally accurate **placeholders**. Replace them with the real published datasets before citing any figure from this dashboard.
-
-**Refreshing the data:**
+Requires Node.js 18+.
 
 ```bash
-# 1. Download the CSV from open.data.gov.sa
-# 2. Convert, preserving Arabic text
-python -c "
-import pandas as pd
-df = pd.read_csv('source.csv', encoding='utf-8-sig')
-df.to_json('data/regions.json', orient='records', indent=2, force_ascii=False)
-"
-```
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js 18+
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/9llmy/sa-jobs-education-dashboard.git
-cd sa-jobs-education-dashboard
-```
-
-### 2. Install and run
-```bash
+git clone https://github.com/9llmy/saudi-graduates-dashboard.git
+cd saudi-graduates-dashboard
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000)
-
-### 3. Build for production
-```bash
-npm run build
-npm start
-```
+Open [http://localhost:3000](http://localhost:3000).
 
 ---
 
 ## 🗺️ Roadmap
 
-- [ ] Replace placeholder JSON with published GASTAT and Ministry of Education datasets
-- [ ] Year selector for multi-year trend comparison
-- [ ] Choropleth map of the 13 regions
-- [ ] Employment-rate-per-major derived metric (the real question this project asks)
-- [ ] CSV export for every chart
+- [ ] Load the remaining universities publishing on open.data.gov.sa
+- [ ] Reach all 13 regions — Asir, Qassim, Madinah, Tabuk, Jazan, Najran, Al-Baha, Al-Jouf and Northern Borders outstanding
+- [ ] Nationality breakdown — Hafr Al-Batin publishes 12 nationalities including 113 stateless graduates
+- [ ] College-level view (`colleges.json` holds 100+ entries, currently unused)
+- [ ] Year filter, once enough universities publish comparable years
 - [ ] Deploy to Vercel
 
 ---
 
-## 🎯 Vision 2030 Alignment
+## 🎯 Vision 2030 alignment
 
-- 🌐 **Digital Transformation** — Turns published government data into a usable public tool
-- 👨‍🎓 **Human Capacity Development** — Surfaces the gap between graduate output and labor demand
-- 📖 **Open Government** — Demonstrates practical reuse of the National Open Data initiative
+- 🌐 **Digital transformation** — turns published government files into a usable public tool
+- 👨‍🎓 **Human capacity development** — makes graduate output visible by field and degree level
+- 📖 **Open government** — demonstrates practical reuse of the National Open Data initiative, including where publishing is still incomplete
 
 ---
 
@@ -182,6 +201,6 @@ Data © respective Saudi government entities, published under the Saudi Open Dat
 
 **Made with ❤️ by [Suliman Saleh](https://github.com/9llmy)**
 
-[📦 GitHub](https://github.com/9llmy/sa-jobs-education-dashboard) • [💼 LinkedIn](https://www.linkedin.com/in/9llmy) • [🗄️ Saudi Open Data](https://open.data.gov.sa)
+[📦 GitHub](https://github.com/9llmy) • [💼 LinkedIn](https://www.linkedin.com/in/9llmy) • [🗄️ Saudi Open Data](https://open.data.gov.sa)
 
 </div>
