@@ -4,8 +4,7 @@
 
 ### What Saudi universities actually publish about their graduates — gaps included
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-brightgreen?style=for-the-badge)](https://9llmy.github.io/SA-GDdashboard
-/)
+[![Live Demo - Visit the bilingual Saudi University Graduates dashboard](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-brightgreen?style=for-the-badge)](https://9llmy.github.io/SA-GDdashboard/)
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js&logoColor=white)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://react.dev/)
