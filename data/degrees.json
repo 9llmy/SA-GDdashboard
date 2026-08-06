@@ -1,11 +1,11 @@
 [
-  { "degree_ar": "بكالوريوس", "graduates": 24820, "female": 13977, "male": 10843 },
-  { "degree_ar": "دبلوم متوسط", "graduates": 11879, "female": 7404, "male": 4475 },
-  { "degree_ar": "ماجستير", "graduates": 6274, "female": 3520, "male": 2754 },
+  { "degree_ar": "بكالوريوس", "graduates": 28930, "female": 18087, "male": 10843 },
+  { "degree_ar": "دبلوم متوسط", "graduates": 13944, "female": 9469, "male": 4475 },
+  { "degree_ar": "ماجستير", "graduates": 6331, "female": 3577, "male": 2754 },
   { "degree_ar": "ماجستير تنفيذي", "graduates": 1236, "female": 550, "male": 686 },
   { "degree_ar": "دكتوراه", "graduates": 1193, "female": 673, "male": 520 }, 
   { "degree_ar": "زمالة", "graduates": 172, "female": 72, "male": 100 },
-  { "degree_ar": "دبلوم عالي", "graduates": 67, "female": 34, "male": 33 },
+  { "degree_ar": "دبلوم عالي", "graduates": 100, "female": 67, "male": 33 },
   { "degree_ar": "دبلوم طبي", "graduates": 18, "female": 8, "male": 10 },
-  { "degree_ar": "دبلوم مشارك", "graduates": 506, "female": 297, "male": 209 }
+  { "degree_ar": "دبلوم مشارك", "graduates": 517, "female": 308, "male": 209 }
 ]

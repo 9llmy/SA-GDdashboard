@@ -1,5 +1,5 @@
 [
-  { "region_key": "riyadh", "region_ar": "الرياض", "region_en": "Riyadh", "graduates": 31464, "universities": 3, "has_data": true },
+{ "region_key": "riyadh", "region_ar": "الرياض", "region_en": "Riyadh", "graduates": 37873, "universities": 4, "has_data": true },
   { "region_key": "hail", "region_ar": "حائل", "region_en": "Hail", "graduates": 6976, "universities": 1, "has_data": true },
   { "region_key": "eastern", "region_ar": "المنطقة الشرقية", "region_en": "Eastern Province", "graduates": 11264, "universities": 2, "has_data": true }, 
   { "region_key": "madinah", "region_ar": "المدينة المنورة", "region_en": "Madinah", "graduates": 0, "universities": 0, "has_data": false },

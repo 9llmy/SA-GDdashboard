@@ -139,5 +139,22 @@
   "male": 897,
   "has_gender": true,
   "has_nationality": false
+},
+{
+  "university_ar": "جامعة الأميرة نورة بنت عبدالرحمن",
+  "university_en": "Princess Nourah bint Abdulrahman University",
+  "region_key": "riyadh",
+  "region_ar": "الرياض",
+  "region_en": "Riyadh",
+  "year": 2025,
+  "hijri_year": 1446,
+  "graduates": 6409,
+  "female": 6409,
+  "male": 0,
+  "has_gender": true,
+  "has_nationality": false,
+  "scope": "women_only_partial_year",
+  "scope_note_ar": "جامعة للطالبات — يشمل 1446هـ كاملة و1447هـ جزئياً (بلا بكالوريوس)",
+  "scope_note_en": "Women-only university — full 1446 AH plus partial 1447 AH (no bachelor's)"
 }
 ]
